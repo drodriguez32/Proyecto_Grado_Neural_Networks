@@ -1,0 +1,36 @@
+All models were trained using the same shuffled data.
+Zeros were removed from the data before training. 
+
+All these models use MULTI-TASK LEARNING to predict HC, CO, CO2, and NOx simultaneously. 
+
+Epochs = 250
+Batch Size = 64
+
+Model Versions:
+- V1: ReLU
+- V2: Leaky ReLU
+- V3: PReLU 
+
+MODEL_3:
+- Optimizer: Adadelta
+- Loss: MSE (Mean Squared Error)
+
+MODEL_4:
+- Optimizer: Adam
+- Loss: MSE (Mean Squared Error)
+
+MODEL_5:
+- Optimizer: Adadelta
+- Loss: MSLE (Mean Squared Logarithmic Error)
+
+MODEL_6:
+- Optimizer: Adam
+- Loss: MSLE (Mean Squared Logarithmic Error)
+
+MODEL_7:
+- Optimizer: Adadelta
+- Loss: MAPE (Mean Absolute Percentage Error)
+
+MODEL_8:
+- Optimizer: Adam
+- Loss: MAPE (Mean Absolute Percentage Error)

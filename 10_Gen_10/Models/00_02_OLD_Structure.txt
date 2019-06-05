@@ -1,0 +1,19 @@
+The notebooks have the old naming scheme for the models. Use this to relate the models between the notebooks and the actual saved models in the new file structure and naming scheme. 
+
+Model 3 (Adadelta + MSE)
+- v2.1 = ReLU + Linear -------------------> Model_1_v1
+- v3.1 = Leaky ReLU + Linear -------------> Model_1_v2
+- v4.0 = PReLU + Linear ------------------> Model_1_v3
+
+Model 4 (Adam + MSE)
+- v2.1 = ReLU + Linear -------------------> Model_2_v1
+- v3.1 = Leaky ReLU + Linear -------------> Model_2_v2
+- v4.0 = PReLU + Linear ------------------> Model_2_v3
+
+Model 5 (MSLE)
+- v2.0 = ReLU + Linear + Adam ------------> Model_4_v1
+- v2.1 = ReLU + Linear + Adadelta --------> Model_3_v1
+- v3.0 = Leaky ReLU + Linear + Adam ------> Model_4_v2
+- v3.1 = Leaky ReLU + Linear + Adadelta --> Model_3_v2
+- v4.0 = PReLU + Linear + Adam -----------> Model_4_v3
+- v4.1 = PReLU + Linear + Adadelta -------> Model_3_v3

@@ -1,0 +1,15 @@
+All models were trained using the same shuffled data.
+Zeros were removed from the data before training. 
+
+Epochs = 300
+Batch Size = 64
+
+Models:
+- 40: MAPE + LReLU + Adam + 0.0 dropout
+- 41: MAPE + LReLU + Adam + 0.1 dropout
+- 42: MAPE + LReLU + Adam + 0.2 dropout
+- 49: MAPE + LReLU + Adam + 0.0 dropout
+- 50: MAPE + LReLU + Adam + 0.1 dropout
+- 51: MAPE + LReLU + Adam + 0.2 dropout
+
+For more information look at the csv 'Model_Rankings'

@@ -1,0 +1,17 @@
+All models were trained using the same shuffled data.
+Zeros were removed from the data before training. 
+
+All models are: MAPE + Leaky ReLU + Adam + ReLU Output
+
+Epochs = 300
+Batch Size = 64
+
+These models part from the setup found in GEN 3 tests. They try to improve predictions using a ReLU output to prevent negative values. Also, the setup was tried individually on all pollutants to see if one could be predicted better than others. This was not the case, all errors were in the order of 10^5 (but this is an improvement of TWO orders of magnitude over GEN 3 models).
+
+Models:
+- 1: HC
+- 2: CO
+- 3: CO2
+- 4: NOx
+
+For more information look at the csv 'Model_Rankings'
